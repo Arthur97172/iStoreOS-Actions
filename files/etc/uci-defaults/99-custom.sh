@@ -25,9 +25,9 @@ uci commit luci
 
 # 【网络设置-static】
 uci set network.lan.proto='static'
-uci set network.lan.ipaddr='192.168.5.88'
+uci set network.lan.ipaddr='192.168.10.10'
 uci set network.lan.netmask='255.255.255.0'
-uci set network.lan.gateway='192.168.5.1'
+uci set network.lan.gateway='192.168.10.1'
 uci set network.lan.dns='223.5.5.5'
 uci commit network
 
@@ -104,7 +104,7 @@ elif [ "$count" -gt 1 ]; then
 	
     # LAN口设置静态IP
     uci set network.lan.proto='static'
-    uci set network.lan.ipaddr='192.168.100.1'
+    uci set network.lan.ipaddr='192.168.10.1'
     uci set network.lan.netmask='255.255.255.0'
     
 	uci commit network
