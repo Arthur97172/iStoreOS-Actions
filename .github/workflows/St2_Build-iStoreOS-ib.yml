@@ -172,7 +172,7 @@ on:
       openwrt_kernel:
         description: "请选择内核版本"
         required: true
-        default: "6.1.y"
+        default: "6.12.y"
         type: choice
         options:
           - 5.15.y
@@ -196,7 +196,7 @@ on:
       network_settings:
         description: "请选择初始网络配置（先确保St1有生成）"
         required: true
-        default: "dhcp"
+        default: "static"
         type: choice
         options:
           - static
